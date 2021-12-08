@@ -1,0 +1,202 @@
+.Education-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;  
+}
+.Background-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.div-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.Titles{
+    margin: 50px 0 20px 0px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "Poppins SemiBold"; 
+}
+.uni{
+    font-size: 20px;
+    font-family: cursive;
+    margin: 0 0 20px 0px;
+}
+.show-case{
+    border: none;
+    width: 120px;
+    margin: 50px 0px 30px 0px;
+    cursor:-webkit-grab;
+    padding: 10px;
+    border-radius: 50px;
+    color: black;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ff5823;
+    transition:  all 0.3s ease 0s;
+}
+
+.ul{
+    
+    text-decoration: none;
+    list-style-type: square;   
+}
+.ul li{
+    font-family: 'Roboto', sans-serif;;
+    line-height: 1.6;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px 0 5px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+.show-case:disabled{
+    background-color: #ff5823;
+}
+
+.Skills-container{
+    width: 75%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col-1, .col-2{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    justify-content: center;
+}
+.skills{
+    
+    border: none;
+    border-radius: 50px;
+    display: block;
+    width: 180px;
+    padding: 5px;
+    margin:  10px 0 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px #435b83b6;
+    cursor: pointer;
+}
+/* Skills css */
+.Java{
+    background-image: linear-gradient(90deg, black 70%, #663399 30% );
+}
+.JavaScript{
+    background-image: linear-gradient(90deg, black 80%, #663399 20% );
+}
+.Python{
+    background-image: linear-gradient(90deg, black 70%, #663399 30% );
+}
+.React{
+    background-image: linear-gradient(90deg, black 70%, #663399 30% );
+}
+.HTML{
+    background-image: linear-gradient(90deg, black 80%, #663399 20% );
+}
+.NodeJS{
+    background-image: linear-gradient(90deg, black 70%, #663399 30% );
+}
+.ExpressJS{
+    background-image: linear-gradient(90deg, black 70%, #663399 30% );
+}
+.database{
+    background-image: linear-gradient(90deg, black 70%, #663399 30% );
+}
+/*Project  */
+.Project-container{
+    width: 100%;
+    display:  flex;
+    flex-wrap: wrap;  
+    gap: 15px;
+    text-align: center;
+}
+
+.Project{
+    flex: 40%;
+    width: 45%; 
+}
+
+.Project img{
+    width: 100%;
+    height:300px;
+}
+.Project a{
+    display: block;
+    padding: 10px;
+    text-decoration:  none;
+    border: none;
+    border-radius: 20px;
+    background-color: #663399;
+    color: #fff;
+    text-align: center;
+    font-weight:  500;
+    font-family: 'Roboto';
+}
+.Project a:hover{
+    background-color: dodgerblue;
+}
+.Project h1{
+    text-align: center;
+    font-weight:  500;
+    font-size: 30px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:414px) {
+    .skills{
+        width: 150px;
+    }
+
+    .col-1, .col-2{
+        width: 50%;
+    }
+
+    .Skills-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .Titles{
+        font-family: "Poppins SemiBold"; 
+        margin: 30px 0px 5px 5px;
+    }
+    .uni{
+        font-family: cursive;
+        text-decoration: wavy;
+        margin: 10px;
+    }
+    .Project{
+        flex: 100%;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .show-case{
+       margin: 50px 0 130px 0;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Mini Preview -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css" rel="stylesheet"> 
+  <!-- MiniPreview stuff here -->
+  <link rel = "stylesheet" href = "CSS/style.css" type="text/css">
+<link rel = "stylesheet" href = "CSS/flips.css" type="text/css">
+  
+  <script type="text/javascript">
+    $(function() {
+                $('.style-logo a').miniPreview({ prefetch: 'pageload' });
+                
+            });
+  </script> <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
+  
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.php" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<section  class="section-about">
+  <div class="anime">
+  <div class="about-page" id="about">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img id="profile-img" src="images/ind.jpg" alt="Avatar" style="border-radius:50%;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Sudip Khatri</h1> 
+      <p>Junior Software Developer</p> 
+      <p>Skills: HTML, CSS, JavaScript, Bootstrap </p><p>PHP Java, Python, React, Node.js </p>
+      <p style="line-height: 2;">Cloud: AWS, Azure, Salesforce </p>
+
+    </div>
+  </div>
+</div>
+<div class="about-2">
+<h1>Sudip Khatri</h1> 
+      <p> Junior</br> Software Developer </p> 
+      <div class="style-logo" style="width: 100%;">
+      <a  href="https://www.vu.edu.au" target="_blank"><i class='fas fa-graduation-cap' style='font-size:36px'></i></a>
+      <a  href="https://www.linkedin.com/in/sudip-khatri-353370148/" target="_blank" > <i class="fa fa-linkedin-square" style="font-size:36px; color:#0E76A8;"></i></a>
+      <a target="_blank" href="https://github.com/sudipkhatri" ><i class="fa fa-github" style="font-size:36px"></i></a>
+      </div>
+</div>
+
+</div>
+</div>
+
+ 
+</section>
+
+<div id="projHeader">
+<h1 id = "riverHead" style="padding-top:5px;">  </h1>
+<div>
+<section id = "projects" class="sec-1">
+  
+<div class="container" id = "projects">
+<div class="image">
+<img src = "images/sample.jpg" alt="smiley.gif"> 
+<h2 id="riverHead"> River Crossing Game: </h2>
+ <p id = "riverPara"> Tools: Java Swing(GUI and Command Line Interface Based)</p>
+ <p><a id = "riverA" target = "_Blank" href =  "https://github.com/sudipkhatri/RIver-Crossing-Game" > Click Here For Source</a> </p>
+</div>
+<div class="title">
+<img src = "images/header.jpg" alt="smiley.gif"> 
+<h2 id="riverHead"> Scholarship Ranking Website: </h2>
+ <p id = "riverPara"> Tools: Bootstrap, HTML5, CSS, JavaScript, Php, MySQL </p>
+ <p><a id = "riverA" target = "_Blank" href =  "https://github.com/sudipkhatri/website" > Click Here For Source</a> </p>
+</div>
+<div class="image">
+<img src = "images/cover.jpg" alt="smiley.gif"> 
+<h2 id="riverHead"> Simple Android and IOS App: </h2>
+ <p id = "riverPara"> Tools: Andriod Studio (Java) and Xcode (swift). </p>
+ <p><a id = "riverA" target = "_Blank" href =  "https://github.com/sudipkhatri/app-development" > Click Here For Source</a> </p>
+</div>
+<div class="title">
+<img src = "images/survey.png" alt="smiley.gif"> 
+<h2 id="riverHead"> Simple Survey Form: </h2>
+ <p id = "riverPara"> Tools: HTML5 and <br> CSS </p>
+ <p><a id = "riverA" target = "_Blank" href =  "https://codepen.io/your-work" > Click Here For Source</a> </p>
+</div>
+</div>
+
+</section>
+
+  <section id="sec-2">
+  <section id = "contact" >
+   
+  <div class="contact-container">
+  
+    
+    <form class="Form-contact" Method = "POST">
+    <h1 id = "titleContact"> Want to Know More? </h1>
+    <p id = "titleContact"> Then Get In Touch </p>
+      <!--<label for = "FirstName"> FirstName: </label> -->
+      <input type = "text" name="FirstName" placeholder="Enter Your FirstName: " required>
+     <!-- <label for = "LastName"> LastName: </label> -->
+      <input type = "text" name="LastName" placeholder="Enter Your LastName: " required>
+    <!--  <label for = "Email"> Email: </label> -->
+      <input type = "email" name="Email" placeholder="Enter Your Email: " required>
+    <!--  <label for = "subject"> Subject: </label> -->
+      <textarea row = "5" column = "5" placeholder="Message  " ></textarea>
+      <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+      <button class= "btn" type="submit" name = "btn-submit"> Submit</button>
+    </Form>
+  </div>
+  </section>
+
+</section>
+<section id="footer">
+  <div class="column">
+  <div class="row">
+  <a href="index.php" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  
+  </div>
+  <div class="row">
+    <h2>Get In Touch </h2><hr>
+    <a style ="font-size: 16px; margin: 5px 0 5px 0;" href = "mailto: sudpkhatri4@gmail.com">Send Email</a>
+    <a  style ="font-size: 16px; margin: 5px 0 5px 0;" href="https://www.linkedin.com/in/sudip-khatri-353370148/" target="_blank" >Linkedin </a>
+  </div>
+ 
+  <div class="row">
+    <h2>Membership</h2><hr>
+    <p>Australian Computer Society(ACS)</p>
+    <p>Membership No: 4302600 </p>
+  </div>
+  </div>
+  <hr style="width: 50%;">
+  <div class="text">
+    <p style="color: white;"> @copyright &nbsp</p><p style="color: white;" id="demo"> </p> <p style="color: white;"> &nbsp All right reserved.</p><br>
+    
+  </div>
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.getFullYear();
+</script>
+</section>
+
+
+
+</body>
+</html>
+

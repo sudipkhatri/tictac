@@ -1,0 +1,48 @@
+.Contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 550px;
+    background-color: cornflowerblue;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact h1{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.Form input[type = text],.Form input[type = email], .Form textarea, .Form button{
+    display: block;
+    border: none;
+    width: 500px;
+    border-radius: 20px;
+    margin: 15px 0 10px 0;
+    padding: 15px;
+    color: #000;
+    background-color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    outline: none;
+}
+.Form textarea{
+    height: 200px;
+}
+.Form button:hover{
+    background-color: #2EE59D;;
+}
+
+@media screen and (max-width:415px) {
+    .Form input[type = text],.Form input[type = email], .Form textarea, .Form button{
+    width:100%;
+    }
+}
+
+
+
+

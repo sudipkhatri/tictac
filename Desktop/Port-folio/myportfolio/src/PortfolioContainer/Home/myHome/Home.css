@@ -1,0 +1,13 @@
+.Home-container{
+    background-image: url('../../../PortfolioContainer/Files/Images/bg.jpg');
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    opacity: 0.9;
+}
+@media screen and (max-width: 1110px) {
+   .Home-container{
+    width: 100%;
+   }
+}

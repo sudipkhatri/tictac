@@ -1,0 +1,113 @@
+.Menu-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    min-height: 600px;
+    flex-direction: row;
+    background-color: #fff;  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Menu-items{
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.show-Menu{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff; }
+
+.list-items{
+    list-style-type:none ;
+    margin: 20px 0 20px 0px; 
+}
+.list{
+    margin: 20px 5px 20px 5px;
+}
+
+.list button{
+    display: block;
+    width: 200px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    
+    
+}
+.list button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+   
+    /* transform: translateY(6px); */
+  }
+  @media screen and (max-width:800px) {
+      .Menu-container{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+      }
+      .Menu-items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .show-Menu{
+          width: 100%;
+      }
+      .list-items{
+          display:  inline-block;
+      }
+      .list{
+        margin:auto;
+        display:  inline-block;
+      }
+      .list button{
+          width: 130px;
+      }
+      
+  }
+  @media screen and (max-width:414px) {
+    .Menu-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Menu-items{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .show-Menu{
+          width: 100%;
+      }
+      .list-items{
+          display:  inline-block;
+          
+      }
+      .list{
+        margin: 20px 20px 20px 20px;
+        display:  inline-block;
+      }
+      .list button{
+          width: 130px;
+      }
+    
+}
+  
