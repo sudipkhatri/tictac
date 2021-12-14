@@ -1,0 +1,97 @@
+:root{
+    --primary : #d81e5b;
+    --secondary : #8c38ff;
+    --dark : #131a26;
+    --light: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--secondary);
+}
+
+.App{
+    padding: 20px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 2px 64px rgba(0, 0, 0.4);
+
+}
+.display{
+    padding: 16px;
+    text-align: right;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 24px;
+    font-weight: 300px;
+}
+
+.display span{
+    padding:  20px;
+    font-size:  14px;
+    color: #886;
+}
+
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    color: var(--light);
+    font-size:  20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.operators{
+    display: flex;
+}
+.operators button{
+    flex: 1 1 0%;
+    background-color: var(--primary);
+    font-weight: 700;
+}
+
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits button{
+    flex:  1 1 30%;
+    max-width: 33.33%;
+    background-color: var(--dark);
+    margin: 2px;
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row button{
+    flex:  1;
+    max-width: 100%;
+    background-color: var(--dark);
+    margin: 2px;
+    border-radius: 20px;
+}
